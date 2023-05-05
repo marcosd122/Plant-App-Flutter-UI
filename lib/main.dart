@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:plant_app/constants.dart';
 import 'package:plant_app/screens/home/home_screen.dart';
+// Aqui são importadas as "constants" que irão definir cor, tema, texto, cor do corpo e outros atributos.
 
 void main() {
   runApp(MyApp());
