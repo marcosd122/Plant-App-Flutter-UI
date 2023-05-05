@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
   AppBar buildAppBar() {
     return AppBar(
       elevation: 0, //Elemento que cria uma sombra.
-      leading: IconButton(
+      leading: IconButton( //botão de ícone
         icon: SvgPicture.asset("assets/icons/menu.svg"),
         onPressed: () {}, // Elemento executado ao clicar no botão.
       ),
