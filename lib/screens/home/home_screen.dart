@@ -5,7 +5,7 @@ import 'package:plant_app/screens/home/components/body.dart'; // Importação do
 
 class HomeScreen extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { //Elemento de construção de outros componentes.
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
