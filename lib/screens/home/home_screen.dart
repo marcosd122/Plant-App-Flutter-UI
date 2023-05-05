@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
       elevation: 0, //Elemento que cria uma sombra.
       leading: IconButton(
         icon: SvgPicture.asset("assets/icons/menu.svg"),
-        onPressed: () {},
+        onPressed: () {}, // Elemento executado ao clicar no botão.
       ),
     );
   }
