@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
-      bottomNavigationBar: MyBottomNavBar(),
+      bottomNavigationBar: MyBottomNavBar(),//Elemento para navegação entre outras telas
     );
   }
 
