@@ -8,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) { //Elemento de construção de outros componentes.
     return Scaffold(
       appBar: buildAppBar(),
-      body: Body(),
+      body: Body(), // Componente importado
       bottomNavigationBar: MyBottomNavBar(),//Elemento para navegação entre outras telas
     );
   }
