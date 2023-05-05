@@ -9,7 +9,7 @@ import 'title_with_more_bbtn.dart';
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // It will provie us total height  and width of our screen
+    // Alteração do tamanho de largura e altura da tela.
     Size size = MediaQuery.of(context).size;
     // ativa a rolagem em um dispositivo pequeno
     return SingleChildScrollView(
