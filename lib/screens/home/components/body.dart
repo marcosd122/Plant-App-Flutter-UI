@@ -17,9 +17,9 @@ class Body extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           HeaderWithSearchBox(size: size),
-          TitleWithMoreBtn(title: "Recomended", press: () {}),
+          TitleWithMoreBtn(title: "Recomended", press: () {}), // Titulo "Recomendado"
           RecomendsPlants(),
-          TitleWithMoreBtn(title: "Featured Plants", press: () {}),
+          TitleWithMoreBtn(title: "Featured Plants", press: () {}), // Titulo "Plantas"
           FeaturedPlants(),
           SizedBox(height: kDefaultPadding),
         ],
