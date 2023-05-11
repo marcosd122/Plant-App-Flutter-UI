@@ -12,12 +12,12 @@ class HeaderWithSearchBox extends StatelessWidget {
   final Size size;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {// Constroi uma caixa de texto com as propriedades definidas abaixo
     return Container(
-      margin: EdgeInsets.only(bottom: kDefaultPadding * 2.5),
+      margin: EdgeInsets.only(bottom: kDefaultPadding * 2.5), //margem, padding importato do elemento "constants".
       // It will cover 20% of our total height
       height: size.height * 0.2,
-      child: Stack(
+      child: Stack(//Metodo para empilhar.
         children: <Widget>[
           Container(
             padding: EdgeInsets.only(
@@ -33,7 +33,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                 bottomRight: Radius.circular(36),
               ),
             ),
-            child: Row(
+            child: Row(//Elemento filho que cria uma linha dentro da caixa de texto
               children: <Widget>[
                 Text(
                   'Hi Uishopy!',
@@ -45,7 +45,7 @@ class HeaderWithSearchBox extends StatelessWidget {
               ],
             ),
           ),
-          Positioned(
+          Positioned(//Posicionamento do texto e atributos como cor, sombra e opacidade.
             bottom: 0,
             left: 0,
             right: 0,
@@ -65,7 +65,7 @@ class HeaderWithSearchBox extends StatelessWidget {
                   ),
                 ],
               ),
-              child: Row(
+              child: Row(//Cria dentro da linha um elemento filho para exibir a imagem svg de busca
                 children: <Widget>[
                   Expanded(
                     child: TextField(
