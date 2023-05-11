@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart'; // importação da biblioteca de SVG
 import 'package:plant_app/components/my_bottom_nav_bar.dart'; // Importação do elemento de barra de navegação.
 import 'package:plant_app/screens/home/components/body.dart'; // Importação do elemento do elemento corpo.
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatelessWidget { //Renderiza a tela home é um componente sem estado
   @override
   Widget build(BuildContext context) { //Elemento de construção de outros componentes.
     return Scaffold(
