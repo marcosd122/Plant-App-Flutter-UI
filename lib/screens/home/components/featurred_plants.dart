@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
 
-class FeaturedPlants extends StatelessWidget {
+class FeaturedPlants extends StatelessWidget { //Cria dois componentes sem estado
   const FeaturedPlants({
     Key key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
+    return SingleChildScrollView(// renderiza o conteúdo da propriedade filho
+      scrollDirection: Axis.horizontal, // Eixo de rolagem
       child: Row(
         children: <Widget>[
-          FeaturePlantCard(
+          FeaturePlantCard(//Busca o componente "PlantCard" e o exibe
             image: "assets/images/bottom_img_1.png",
             press: () {},
           ),
@@ -27,7 +27,7 @@ class FeaturedPlants extends StatelessWidget {
   }
 }
 
-class FeaturePlantCard extends StatelessWidget {
+class FeaturePlantCard extends StatelessWidget {//Construtor do componente
   const FeaturePlantCard({
     Key key,
     this.image,
@@ -39,8 +39,8 @@ class FeaturePlantCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    return GestureDetector(
-      onTap: press,
+    return GestureDetector(//metodo para detectar gestos
+      onTap: press, //Ao apertar
       child: Container(
         margin: EdgeInsets.only(
           left: kDefaultPadding,
