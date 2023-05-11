@@ -9,12 +9,12 @@ class RecomendsPlants extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // componente filho rolável
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
         children: <Widget>[
-          RecomendPlantCard(
+          RecomendPlantCard(  // componente que renderiza o card com todos os widgets imagem, texto e animação.
             image: "assets/images/image_1.png",
             title: "Samantha",
             country: "Russia",
@@ -55,7 +55,7 @@ class RecomendsPlants extends StatelessWidget {
   }
 }
 
-class RecomendPlantCard extends StatelessWidget {
+class RecomendPlantCard extends StatelessWidget { // Cria o componente Card - Com a busca dos atributos abaixo (image, title, country, price).
   const RecomendPlantCard({
     Key key,
     this.image,
