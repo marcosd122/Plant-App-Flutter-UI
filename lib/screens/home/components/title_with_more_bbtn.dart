@@ -16,11 +16,11 @@ class TitleWithMoreBtn extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Row(
-        children: <Widget>[
+        children: <Widget>[ // Elemento filho criado abaixo
           TitleWithCustomUnderline(text: title),
           Spacer(),
-          FlatButton(
-            shape: RoundedRectangleBorder(
+          FlatButton( // Modelo de botão
+            shape: RoundedRectangleBorder( // Formato com bordas arredondadas.
               borderRadius: BorderRadius.circular(20),
             ),
             color: kPrimaryColor,
